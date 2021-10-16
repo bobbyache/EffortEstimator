@@ -1,0 +1,9 @@
+@startuml
+    ' https://plantuml.com/salt
+    
+    class Component {}
+    class UseCase {}
+
+    UseCase -- Component
+
+@enduml

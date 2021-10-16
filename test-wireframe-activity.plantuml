@@ -1,0 +1,62 @@
+@startuml "name"
+    !unquoted procedure SALT($x)
+    "{{
+    salt
+    %invoke_procedure("_"+$x)
+    }}" as $x
+    !endprocedure
+
+    !procedure _startup()
+    {+
+        == Component List Screen
+        ...
+        {T#
+            +Name        | Description
+            + NamesService  | .NET Core Web-Service
+            + NamesWebclient   | Blazor App
+        }
+        ...
+        {+
+            [Add] | [Edit] | [Delete] | [Close]
+        }
+    }
+    !endprocedure
+
+    !procedure _wait()
+    {+
+        == Wait Screen
+        {T#
+            +Name        | Description
+            + NamesService  | .NET Core Web-Service
+            + NamesWebclient   | Blazor App
+        }
+        {+
+            [Add] | [Edit] | [Delete] | [Close]
+        }
+    }
+    !endprocedure
+
+    !procedure _down()
+    {+
+        == Down Screen
+        {T#
+            +Name        | Description
+            + NamesService  | .NET Core Web-Service
+            + NamesWebclient   | Blazor App
+        }
+        ...
+        {+
+            [Add] | [Edit] | [Delete] | [Close]
+        }
+    }
+    !endprocedure
+
+    (*) --> SALT(startup)
+    if ("Editing") then
+        -right-> SALT(wait)
+    else
+        -down--> SALT(down)
+    endif    
+    --> (*)
+
+@enduml

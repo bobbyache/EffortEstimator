@@ -1,0 +1,28 @@
+@startsalt
+    {+
+        == Main Screen
+        ---
+        {+
+            {/ <b>Overview | Work Items | Work Item Categories | Resources | Components }
+        }
+        {
+            Enter Estimation Units | ^View by ^days ^hours^ |
+        }
+        
+        ...
+        ...
+        ...
+        ...
+        {T#
+            +<b>Component | <b>Best Case (Days) | <b>Worst Case (Days) | <b>Probable Case (Days)
+            + NamesService  | 12 | 18 | 16
+            + NamesWebclient   | 14 | 22 | 18
+            +<b>Total | <b>26 | <b>32 | <b>34
+        }
+        ...
+
+        {+
+            [Close]
+        }
+    }
+@endsalt

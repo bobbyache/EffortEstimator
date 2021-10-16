@@ -1,0 +1,29 @@
+@startsalt
+
+    {+
+        == Main Screen
+        {+
+            {/ Overview | Work Items | Work Item Categories | Resources | <b>Components }
+        }
+        ---
+        {+
+            <b>Manage Components
+            {
+                Components are the packages or DLLs or UI apps that you develop.
+            }
+            ---
+            {T#
+                +E-Signatures Web Service
+                +Web Client UI
+                +BFF Layer
+            }
+            {+
+                [Add] | [Edit] | [Delete] | [Close]
+            }
+        }
+
+        {+
+            [Close]
+        }
+    }
+@endsalt
