@@ -1,0 +1,19 @@
+@startuml "Top-Level Use Cases"
+    left to right direction
+
+    actor  "User" as user
+
+    rectangle "System" {
+        usecase "View Dashboard" as vw_dashboard
+        usecase "Manage Work Items" as mg_workitems
+        usecase "Manage Resources" as mg_resources
+        usecase "Manage Components" as mg_components
+        usecase "Manage Settings" as mg_settings
+
+        user -- vw_dashboard
+        user -- mg_workitems
+        user -- mg_resources
+        user -- mg_components
+        user -- mg_settings
+    }
+@enduml

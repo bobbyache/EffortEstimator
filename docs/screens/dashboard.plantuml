@@ -4,10 +4,9 @@
     == Dashboard
     ---
     {+
-        {/ <b>Overview | Work Items | Resources | Components }
+        {/ <b>Overview | Work Items | Resources | Components | Settings }
     }
     {
-        Hours Estimated: | <b>34
     }
     {
         Confidence | 75%
@@ -15,7 +14,9 @@
     }
     ...
     <b>Duration
-    Start Date: Tues 12 Jan 2022, End Date: Wed 13 Aug 2022 - (210 Days)
+    Days Estimated: <b>210
+    Start Date: Tues 12 Jan 2022
+    End Date: Wed 13 Aug 2022
     ...
     {
         <b>Monetary Cost

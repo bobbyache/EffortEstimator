@@ -1,0 +1,27 @@
+@startuml "View Dashboard"
+    left to right direction
+
+    actor  "User" as user
+
+    rectangle "System" {
+        usecase "View Dashboard" as vw_dashboard
+        usecase "Change Currency" as change_currency
+        usecase "Change Time Units" as change_time_units
+        usecase "View Component Cost Estimates" as vw_cost
+        usecase "View Component Time Estimates" as vw_time
+        usecase "View Resource Time Estimates" as vw_resource
+        usecase "View Confidence Level" as vw_confidence
+        usecase "View Duration" as vw_duration
+        usecase "Filter by Tags" as filter_tags
+
+        user -- vw_dashboard
+        vw_dashboard -- change_currency
+        vw_dashboard -- change_time_units
+        vw_dashboard -- vw_cost
+        vw_dashboard -- vw_time
+        vw_dashboard -- vw_resource
+        vw_dashboard -- vw_confidence
+        vw_dashboard -- vw_duration
+        vw_dashboard -- filter_tags
+    }
+@enduml

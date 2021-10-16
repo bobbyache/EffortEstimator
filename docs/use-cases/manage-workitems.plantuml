@@ -1,0 +1,29 @@
+@startuml "View Dashboard"
+    left to right direction
+
+    actor  "User" as user
+
+    rectangle "System" {
+        usecase "Manage Work Items" as workitems
+        usecase "Change Time Units" as change_time_units
+        usecase "View Filtered Work Items" as vw_workitems
+        usecase "Add Work Item" as add_workitem
+        usecase "Delete Work Item" as delete_workitem
+        usecase "Edit Work Item" as edit_workitem
+
+        usecase "Get Components" as get_components
+        usecase "Get Resources" as get_resources
+        usecase "Get Estimation Units" as get_est_units
+    }
+
+    user -- workitems
+    workitems -- change_time_units
+    workitems -- vw_workitems
+    workitems -- add_workitem
+    workitems -- delete_workitem
+    workitems -- edit_workitem
+    workitems -- get_components
+    workitems -- get_est_units
+    workitems -- get_resources
+    
+@enduml
