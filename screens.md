@@ -61,6 +61,10 @@ Defaults such as Estimate Ratios are applied when a work item is created.
 
 ![Settings](https://uml-services.xchangedocs.co.za/svg/bLHjQy8m4FxUNv4L1igep35XZ3bqrR71S4CT-o0AiJrT84qbIJkq-jztgRLis7RpeCtbyZptbd0TfQdKYd9Dx15epSHIsPP5K9ABT37IRfF3OMvp72VNarmxtXLRZ8ofN88cRYGb26zzIxParWivft9MYE_1WaQOg1kA1VEH0kG5Ok26QD-qR5pEYmEn0CYxO5gbCPx2I2eCHTSgsnJ7IsPzfLb0DP0XrInKf9QbK2_4fw50cJQbAJKRBRiKw8O-keMOmPV1NZQQvTWXAA3I-zm3Ivpk2gt_BSoDb0w3yhgIyLdfcP6x-Vs0OfUtHikQiD_yBXGDXseg_NN5CiA7G3vWxdYSWT18li8F6vN-MzNqjsTyiJ86IMgDGN-CxPPGHoBUIKg_pbnLUzb44iXZ93niaZYL_S3f9fIakrgToipl-rNmjI4RalbAMSMNlqDEKXbfqlNzQJMYxpFz1sG8GHZ3z8JiZYrcd5XMEUR7DChZZYX6nHedBiLXmASbzBssipeWV3FflW40 "Settings")
 
+### Add Custom Estimate Ratio
+
+![Add Custom Estimate Ratio](https://uml-services.xchangedocs.co.za/svg/SoWkIImgAKxCAL5GSan9KN0kBIx9prLmBIx9p4qiILK8IYp9p5VYub80WcfjC0K2jhOAVgdbs5N35UdgwiBPrN0M28Ia0dNafLifr2We6UgPAg58EkUd04rABSi4MW2KDz0pH9KFIYrEJInApe18ecb6SYCCH0SdbgN60bL7EoVc9QVcnAAegEL2PTLoEQJcfO021000 "Add Custom Estimate Ratio")
+
 ## References
 
 You can mock Pie Charts etc. too.

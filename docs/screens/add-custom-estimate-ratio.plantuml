@@ -1,0 +1,15 @@
+@startsalt "Add Custom Estimate Ratio"
+
+    {+
+        == New Custom Estimate Ratio
+        ---
+        {
+            Testing: | "1.5"
+            Code Review | "0.1"
+            Research | "0.5"
+            {+
+                [Save] | [Cancel]
+            }
+        }
+    }
+@endsalt
