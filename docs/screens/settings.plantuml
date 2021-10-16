@@ -6,6 +6,7 @@
         {
             {
                 {
+                    Target Currency: | ^Dollar^
                     Default Confidence Level: | "85" | %
                     Time Units: | ^Hours ^Days ^Hours^
                     {^Estimate Ratios (Default)

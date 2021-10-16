@@ -7,6 +7,8 @@
             {
                 {
                     Resource: | "Tom Banks"
+                    Currency: | ^Rand^
+                    Cost: | "250.10"
                 }
                 ---
             }

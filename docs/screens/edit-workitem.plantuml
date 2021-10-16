@@ -17,6 +17,7 @@
                     Component | "E-Signatures Web Service"
                     Tags | "mvp,use case"
                     Confidence % | "85"
+                    Resource | "John"
                     ...
                     [] De-scoped (Not calculated)
                 }

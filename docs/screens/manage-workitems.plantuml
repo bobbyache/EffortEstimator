@@ -30,6 +30,9 @@
                     }
                     {^Component
                         ^All^
+                    } |
+                    {^Resource
+                        ^All^
                     }
                     
                     [Filter]
@@ -38,12 +41,12 @@
             ---
             {S
                 {T#
-                    +<b>Work Item | <b>Time (Hrs) | <b>Confidence | <b>Descoped | <b>Component | <b>Tags
-                    +Get User | 6.5  | 85% | - | Server API | usecase
-                    +Add User | 8.2  | 85%  | - | Server API | usecase,requires-input
-                    +Delete User | 3.5  | 85%  | - | Server API | usecase
-                    +Add User Dialog | 1.8  | 85%  | - | Web Client | usecase,ui,boundary
-                    +Boilerplate Web API | 16 | 85%  | yes | New Billing Service | infrastructure,requires-input
+                    +<b>Work Item | <b>Time (Hrs) | Resource | <b>Confidence | <b>Descoped | <b>Component | <b>Tags
+                    +Get User | 6.5 | Alice | 85% | - | Server API | usecase
+                    +Add User | 8.2 | - | 85%  | - | Server API | usecase,requires-input
+                    +Delete User | 3.5 | -  | 85%  | - | Server API | usecase
+                    +Add User Dialog | 1.8 | John   | 85%  | - | Web Client | usecase,ui,boundary
+                    +Boilerplate Web API | 16 | John  | 85%  | yes | New Billing Service | infrastructure,requires-input
                 }
             }
 

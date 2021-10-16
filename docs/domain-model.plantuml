@@ -1,9 +1,25 @@
 @startuml
     ' https://plantuml.com/salt
-    
-    class Component {}
-    class UseCase {}
 
-    UseCase -- Component
+    class Component {}
+    class WorkItem {}
+    class Resource {}
+    class Tag {}
+    class Estimate {}
+    class CalculationTemplate {}
+    class ConfidenceLevel {}
+    class EstimateRatio {}
+
+    Component -- Tag
+    WorkItem -- Estimate
+    WorkItem -- Tag
+    Estimate -- EstimateRatio
+
+
+
+    WorkItem -- Component
+    WorkItem -- CalculationTemplate
+    WorkItem -- Resource
+    WorkItem -- ConfidenceLevel
 
 @enduml

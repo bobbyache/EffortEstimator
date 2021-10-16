@@ -13,10 +13,13 @@
         Confidence | 75%
         Include Tags: | "in-scope,mvp" | Exclude Tags: | "in-scope,mvp" | 
     }
-
+    ...
+    <b>Duration
+    Start Date: Tues 12 Jan 2022, End Date: Wed 13 Aug 2022 - (210 Days)
     ...
     {
         <b>Monetary Cost
+        Currency | ^Dollars^
     }
 
     ...
