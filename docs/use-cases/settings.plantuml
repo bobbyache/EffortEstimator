@@ -1,0 +1,23 @@
+@startuml "Settings"
+    left to right direction
+
+    actor  "User" as user
+
+    rectangle "System" {
+        usecase "Manage Settings" as settings
+        usecase "Get Settings" as get_settings
+        usecase "Save Settings" as save_settings
+
+        usecase "Add Custom Estimate Ratio" as add_est_ratio
+        usecase "Remove Custom Estimate Ratio" as rem_est_ratio
+        usecase "Edit Custom Estimate Ratio" as edit_est_ratio
+    }
+
+    user -- settings
+    settings -- get_settings
+    settings -- save_settings
+    settings -- add_est_ratio
+    settings -- rem_est_ratio
+    settings -- edit_est_ratio
+
+@enduml

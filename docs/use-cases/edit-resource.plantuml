@@ -1,0 +1,18 @@
+@startuml "Edit/Add Resource"
+    left to right direction
+
+    actor  "User" as user
+
+    rectangle "System" {
+        usecase "New Resource" as new
+        usecase "Edit Resource" as edit
+        usecase "Update Resource" as update
+        usecase "Get Resource" as get
+    }
+
+    user -- new
+    user --edit
+    edit -- update
+    edit -- get
+
+@enduml

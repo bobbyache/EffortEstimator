@@ -1,0 +1,24 @@
+@startuml "New Work Item"
+    left to right direction
+
+    actor  "User" as user
+
+    rectangle "System" {
+        usecase "Edit Work Item" as edit
+        usecase "Get Work Item" as get_workitem
+        usecase "Get Calculation Templates" as get_templates
+        usecase "Update Basic Work Item" as edit_workitem
+        usecase "Add Custom Time Estimate Field" as add_custom
+        usecase "Remove Custom Time Estimate Field" as remove_custom
+        usecase "Calculate Default Time Estimates" as calc_estimates
+    }
+
+    user -- edit
+    edit -- get_workitem
+    edit -- get_templates
+    edit -- edit_workitem
+    edit -- remove_custom
+    edit -- add_custom
+    edit -- calc_estimates
+
+@enduml

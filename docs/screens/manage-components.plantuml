@@ -7,11 +7,6 @@
         }
         ---
         {+
-            ---
-            {
-                Include Tags: | "in-scope,mvp" | Exclude Tags: | "in-scope,mvp" | 
-            }
-            ---
             {S
                 {T#
                     +E-Signatures Web Service | Descoped | Tags

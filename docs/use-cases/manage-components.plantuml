@@ -1,0 +1,21 @@
+@startuml "View Dashboard"
+    left to right direction
+
+    actor  "User" as user
+
+    rectangle "System" {
+        usecase "Manage Components" as components
+        usecase "Add Component" as add_component
+        usecase "Edit Component" as edit_component
+        usecase "Delete Component" as delete_component
+        usecase "Remove Component from Work Items" as remove_from_workitems
+    }
+
+    user -- components
+    components -- edit_component
+    components -- delete_component
+    components -- add_component
+    delete_component -- remove_from_workitems
+
+    
+@enduml

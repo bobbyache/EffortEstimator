@@ -1,0 +1,16 @@
+@startuml "New Work Item"
+    left to right direction
+
+    actor  "User" as user
+
+    rectangle "System" {
+        usecase "New Work Item" as new
+        usecase "Get Calculation Templates" as get_templates
+        usecase "Create Basic Work Item" as create_template
+    }
+
+    user -- new
+    new -- get_templates
+    new -- create_template
+
+@enduml
