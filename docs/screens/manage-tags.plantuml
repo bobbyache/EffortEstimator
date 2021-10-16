@@ -3,7 +3,7 @@
     {+
         == Main Screen
         {+
-            {/ Overview | Work Items | Work Item Categories | Resources | <b>Components }
+            {/ Overview | Work Items | Tags | Resources | <b>Components }
         }
         ---
         {+

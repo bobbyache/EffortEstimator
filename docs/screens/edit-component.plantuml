@@ -1,0 +1,27 @@
+@startsalt "Edit Component"
+
+    {+
+        == Edit Component
+        ---
+        {
+            {
+                "Component Title"
+                Description 
+                {SI 
+                    Description of my component here. 
+                    .
+                    .
+                    .
+                }
+                {
+                    Tags | "mvp,use case" | [ Manage Tags ]
+                    [] De-scoped (Not calculated)
+                }
+                ---
+            }
+            {+
+                [Save] | [Cancel]
+            }
+        }
+    }
+@endsalt

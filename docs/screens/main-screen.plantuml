@@ -1,28 +1,54 @@
 @startsalt
-    {+
-        == Main Screen
-        ---
-        {+
-            {/ <b>Overview | Work Items | Work Item Categories | Resources | Components }
-        }
-        {
-            Enter Estimation Units | ^View by ^days ^hours^ |
-        }
-        
-        ...
-        ...
-        ...
-        ...
-        {T#
-            +<b>Component | <b>Best Case (Days) | <b>Worst Case (Days) | <b>Probable Case (Days)
-            + NamesService  | 12 | 18 | 16
-            + NamesWebclient   | 14 | 22 | 18
-            +<b>Total | <b>26 | <b>32 | <b>34
-        }
-        ...
 
-        {+
-            [Close]
-        }
+{+
+    == Main Screen
+    ---
+    {+
+        {/ <b>Overview | Work Items | Tags | Resources | Components }
     }
+    {
+        Hours Estimated: | <b>34
+    }
+    {
+        Confidence | 75%
+        Include Tags: | "in-scope,mvp" | Exclude Tags: | "in-scope,mvp" | 
+    }
+
+    ...
+    {
+        <b>Monetary Cost
+    }
+
+    ...
+    {T#
+        +<b>Component | <b>Best Case | <b>Worst Case | <b>Estimated Case
+        + NamesService  | $3345.23 | $3345.23 | $3345.23
+        + NamesWebclient   | $3345.23 | $3345.23 | $3345.23
+        +<b>Total | <b>$3345.23 | <b>$3345.23 | <b>$3345.23
+    }
+    ...
+    {
+        <b>Hours Estimated: <b>34 | --- Enter Estimation Units | ^days ^days ^hours^ |
+    }
+    ...
+    {T#
+        +<b>Component | <b>Best Case | <b>Worst Case | <b>Estimated Case
+        + NamesService  | 12 | 18 | 16
+        + NamesWebclient   | 14 | 22 | 18
+        +<b>Total | <b>26 | <b>32 | <b>34
+    }
+    ...
+    {T#
+        +<b>Resource | <b>Best Case | <b>Worst Case | <b>Estimated Case
+        + John  | 12 | 18 | 16
+        + Paul   | 14 | 22 | 18
+        + Alice   | 14 | 22 | 18
+    }
+    ...
+
+    {+
+        [Close]
+    }
+}
+
 @endsalt

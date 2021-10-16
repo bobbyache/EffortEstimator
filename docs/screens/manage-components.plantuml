@@ -1,0 +1,33 @@
+@startsalt
+
+    {+
+        == Main Screen
+        {+
+            {/ Overview | Work Items | Tags | Resources | <b>Components }
+        }
+        ---
+        {+
+            <b>Manage Components
+            {
+                Components are the packages or DLLs or UI apps that you develop.
+            }
+            ---
+            {
+                Include Tags: | "in-scope,mvp" | Exclude Tags: | "in-scope,mvp" | 
+            }
+            ---
+            {T#
+                +E-Signatures Web Service | Descoped | Tags
+                +Web Client UI | Yes | mvp,ui,
+                +BFF Layer | - | backend,mvp,todo
+            }
+            {+
+                [Add] | [Edit] | [Delete] | [Close]
+            }
+        }
+
+        {+
+            [Close]
+        }
+    }
+@endsalt
