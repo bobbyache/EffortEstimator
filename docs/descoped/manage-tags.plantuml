@@ -1,21 +1,18 @@
 @startsalt
 
     {+
-        == Main Screen
+        == Manage Tags
         {+
             {/ Overview | Work Items | Tags | Resources | <b>Components }
         }
         ---
         {+
-            <b>Manage Components
-            {
-                Components are the packages or DLLs or UI apps that you develop.
-            }
-            ---
-            {T#
-                +E-Signatures Web Service
-                +Web Client UI
-                +BFF Layer
+            {SI
+                mvp
+                todo
+                done
+                requires-input
+                awaiting-business
             }
             {+
                 [Add] | [Edit] | [Delete] | [Close]

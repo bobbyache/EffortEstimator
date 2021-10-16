@@ -1,10 +1,10 @@
-@startsalt
+@startsalt "Dashboard"
 
 {+
-    == Main Screen
+    == Dashboard
     ---
     {+
-        {/ <b>Overview | Work Items | Tags | Resources | Components }
+        {/ <b>Overview | Work Items | Resources | Components }
     }
     {
         Hours Estimated: | <b>34
@@ -28,7 +28,8 @@
     }
     ...
     {
-        <b>Hours Estimated: <b>34 | --- Enter Estimation Units | ^days ^days ^hours^ |
+        <b>Hours Estimated: <b>34
+        Enter Estimation Units | ^days ^days ^hours^
     }
     ...
     {T#

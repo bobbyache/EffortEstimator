@@ -1,0 +1,41 @@
+@startsalt "Settings"
+
+    {+
+        == Settings
+        ---
+        {
+            {
+                {
+                    Default Confidence Level: | "85" | %
+                    Time Units: | ^Hours ^Days ^Hours^
+                    {^Estimate Ratios (Default)
+                        Testing: | "1.5"
+                        Code Review | "0.1"
+                        Research | "0.5"
+                    }
+                    
+                    {^Estimate Ratios (Custom)
+                        {T!
+                            <b>Name | <b>Testing | <b>Code Review | <b>Research
+                            Angular Web-client | 2 | 0.1 | 0.5
+                            API Server (.NET Core) | 1.5 | 0.4 | 0.1 
+                            Azure Function | 1.5 | 0.4 | 0.1 
+                            Blazor App | 1.5 | 0.4 | 0.1 
+                            Research Only | 1 | 0 | 0
+                        }
+                    } | {
+                            [Add]
+                            [Edit]
+                            [Remove]
+                        }
+                }
+                ---
+
+
+            }
+            {+
+                [Save] | [Cancel]
+            }
+        }
+    }
+@endsalt

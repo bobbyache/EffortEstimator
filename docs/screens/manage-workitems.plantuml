@@ -1,0 +1,59 @@
+@startsalt "Manage Work Items"
+
+    {+
+        == Manage Work Items
+        {+
+            {/ Overview | <b>Work Items | Resources | Components }
+        }
+        ---
+        {+
+            ---
+            {
+                Estimation Units: | ^hours^
+                {^Filters
+                    {^Time
+                        [ ] < | "" | hours
+                        [ ] > | "" | hours
+                    } |
+                    {^Confidence
+                        [ ] < | "" | %
+                        [ ] > | "" | %
+                    } |
+                    {^Scope
+                        ( ) All 
+                        ( ) De-scoped
+                        ( ) Scoped
+                    } |
+                    {^Tags
+                        Include Tags: | "in-scope,mvp"
+                        Exclude Tags: | "in-scope,mvp"
+                    }
+                    {^Component
+                        ^All^
+                    }
+                    
+                    [Filter]
+                }
+            }
+            ---
+            {S
+                {T#
+                    +<b>Work Item | <b>Time (Hrs) | <b>Confidence | <b>Descoped | <b>Component | <b>Tags
+                    +Get User | 6.5  | 85% | - | Server API | usecase
+                    +Add User | 8.2  | 85%  | - | Server API | usecase,requires-input
+                    +Delete User | 3.5  | 85%  | - | Server API | usecase
+                    +Add User Dialog | 1.8  | 85%  | - | Web Client | usecase,ui,boundary
+                    +Boilerplate Web API | 16 | 85%  | yes | New Billing Service | infrastructure,requires-input
+                }
+            }
+
+            {+
+                [Add] | [Edit] | [Delete] | [Close]
+            }
+        }
+
+        {+
+            [Close]
+        }
+    }
+@endsalt

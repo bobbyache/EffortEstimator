@@ -1,0 +1,16 @@
+@startsalt " New Work Item"
+
+    {+
+        == New Work Item
+        ---
+            {
+                Name: | "Work Item Title"
+                Tags | "mvp,use case"
+                Development | "10"
+                Calculation Template: | ^Basic ^Basic ^Test Intensive ^Research Intensive^
+            }
+            {+
+                [Save] | [Cancel]
+            }
+    }
+@endsalt

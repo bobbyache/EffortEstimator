@@ -1,0 +1,18 @@
+@startsalt "Edit Resource"
+
+    {+
+        == Edit Resource
+        ---
+        {
+            {
+                {
+                    Resource: | "Tom Banks"
+                }
+                ---
+            }
+            {+
+                [Save] | [Cancel]
+            }
+        }
+    }
+@endsalt

@@ -15,16 +15,17 @@
                 }
                 {
                     Component | "E-Signatures Web Service"
-                    Tags | "mvp,use case" | [ Manage Tags ]
+                    Tags | "mvp,use case"
+                    Confidence % | "85"
+                    ...
                     [] De-scoped (Not calculated)
-                    Confidence | "85" | %
                 }
                 ---
                 {^"Time"
                     Calculation Template: | ^Basic ^Basic ^Test Intensive ^Research Intensive^  | [Re-calculate]
                     {^"Calculated Fields"
-                        Research | "12.5"
                         Development | "10"
+                        Research | "12.5"
                         Testing | "10"
                         Code Review | "1.5"
                     }

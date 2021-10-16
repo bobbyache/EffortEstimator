@@ -14,7 +14,7 @@
                     .
                 }
                 {
-                    Tags | "mvp,use case" | [ Manage Tags ]
+                    Tags | "mvp,use case"
                     [] De-scoped (Not calculated)
                 }
                 ---
