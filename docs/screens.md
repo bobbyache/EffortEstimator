@@ -1,28 +1,28 @@
-# Expectations
+# Main Policies
 
 - Tags will not be stored or managed. Each filtered search on Tags will search through all work items and check their tags to either exclude or include the item from the result set.
 
 # Screens
 
-### Main Dashboard Screen
-Will show a breakdown of hour estimates and monetary estimates per what is charged per hour. Note you can choose to include or exclude certain tags from the calculation in order to give different possibilities.
-
-Optionally, resources can help bring the time down.
+## Main Dashboard Screen
+- Will show a breakdown of hour estimates and monetary estimates per what is charged per hour. 
+- Note you can choose to include or exclude certain tags from the calculation in order to give different possibilities.
+- Optionally, resources can help bring the time down.
 
 ![Dashboard](https://uml-services.xchangedocs.co.za/svg/lLHHRnen37xdLrYqUsfX9KTfXTQf7I2jbTPMXOg7gaZXpeFJSWbAScoewt-laplkW5AwQTBouCJnPyV-dEJSMAwjuS92jSlDTAouZggLojD11MYSdK6nwpTgjPgVSxjVVeHFuyytSzJp67_2RnWg_GCkBIQ6b3iqAjKXkdL79JCbKLgdzD7QM4uCFFj8cNnwjNQZe-JtE48P8lcT77ye39So56c4CE0JqoPRDPOr4weP7YRpMPKsUh_U0QoSLw_N_Kp5T5FDRQoarxjyOQ1dR9nmYr7RsLdZo9lwZZm2M6p38AKQ6mokk0Hsn9W7z6IKcuSOGIE0YtHIMfSdbfLIx6_448LTKDN6bXIaMXC12qfvr5L2S6r6UUxheGPxXSy1HIie9qTIlw2nqE46CvKwjQONLVgzCX1SymHDttMOUa3O_I1e7jTPi7svwJZ4SIXYbyJV-58-0sMvo59RWRwfRMdc6hLVwIPkjZ9e5eYUjAYNPke-tClONzLHvAv0BgSko6ZRKV-7UhfY94wTQEqckj4amJBuMxIoLZO7B9-RVr3Pyat_Ms5NQYft57JBKx6Z3BWGdf1jW3BxpR_geIEKmSSSHM_d76NaVhyN "Dashboard")
 
 
 
 
-### Manage Work Items
+## Manage Work Items
 
 ![Manage Work Items](https://uml-services.xchangedocs.co.za/svg/dLLjRzem4FxEhpXbGceLmjHDhT3KLgN0DYQjcmPLFo2GJ7AbrepDR8UjQldljMFUIk9GPWbZvvvxxidvphbIcaYj2DCGV2USJ13kXFmDNOrJ5LGgOCPJcFtPSN41ETJQk8NBjk_XnnpbdE9VU8RpyUN6nUn_eHAfZD6kMs8w4novLh1OKsnMKHJvOcoRClEhdHqTfUcKQ2eut7AgrISJR_HWGgjH3liq-aoPHgbo5cVjqoaMckmOm13E3NaGc2aBK0gzt0zTmBD7I4lmUveWZzyef_esATK3PVHYCVChE89ZQ386fO0sHigo9AMedX_YLzSd4_yHT7dCqWJ1Wcn919Gx8RNfV1PutJh_3dPRUCzmMVJUO2EJlT61Bxrgg_yXBNnQ-73W-cHOAUTObFTgBz-0_NU5ySBjsyDT9hONuUYhLCTRbuapRRh3xTleIcnbNUPzoUEhal0BQhXLA0tkh7vgvYQZ6MNZj6hcoFnwvdepWERFhjca2cEYYZCVDfDaHTQeVrYwMw8Iffh4FocLg2BAPsbndOHjPAXnnVqn4nh1Vl8zCjkKC34ny9DwmypVn0E77TOx74EBKPV9bUIKriOYvGcHZyKHhWLbA6UC6D6MmOawELi7MSTupBuDD-RhSKqPetoIlOSx0ihl9L5Qfh5EvTv4xLRbwp8CS_Y1ISFGH1bq4ggpXSjojcmneN3egVCjxXtUNJ_diwXS8K_iv_S5 "Manage Work Items")
 
-### New Work Item
+## New Work Item
 
 ![New Work Item](https://uml-services.xchangedocs.co.za/svg/RP0n2y9038Nt_ehGLGkw2eAeYqi7BJY8XN0-j7XtBKsiW_hVxNMebFgMv7BVIowt4kLQXQrIJ2cUT2phE-qKBeuYQlMQT25ekHmI_KMI97tUUGQde9GT5lIck3TJLgX5F28plae0NLDD7m8oB7-eBHhOidBm6k3vR8nis9g7PIrAJnbSrQRT4_8rIs7wa46KTbxXfMX0-Hu2hitjLyi7hJ_3JIUZkQS3DpYtWquRzWRs_CV-YLRmb_3hNm00 "New Work Item")
 
-### Edit Work Item
+## Edit Work Item
 Work Items are tagged to identify whether they are use cases, or tasks, or infrastructure or boilerplate.
 
 One or more calculation templates are defined for the entire estimation project and one can be selected to recalculate the calculated fields. When the Work Item is created for the first time, the calculated fields are calculated based on the default template. However a new template can be chosen and the re-calculate button clicked.
@@ -33,17 +33,17 @@ The Percent confidence will help try and calculate a best and worst case scenari
 
 ![Edit Work Item](https://uml-services.xchangedocs.co.za/svg/fLJVIyCm47xVNt4K18Us-8E120ErJfmFFco5FOmLOdjkmJGfILePS_-xYPDihEaSU2_vzTtTzzqbkLEQIAq8qn308ASQ9a9-m51Z4NGwO6nrzZDOw_Vt871wVHtru5bKKdKTB0n3Dr-vMNDbBTZ6IgXc63GGZwWoIKjD1OV6uMeyR6xkUubtA9RmQHDfcmCMA37o-qN_sbqt2NezOr6KWYFNy0N181pJEIUwagXWWcymHbdJp5CAQmcPA-jLrELvfH0oebgGiU3lD4UU8PnOZvkU7pT2PVfdK0Rp8XRSZueYVn6cCrFhK6MYn1nENuKsZ5XMCQ8nxnvHeDtBuegM1WajscJzXhUTJR0eRQPRmprz88fcRaXGQHXoZLpH6Y4rAf78RB7TIy5uJKSOEi8pRqB39dQIu8aYovMVskRYrSX4MVmsz_AY7UeeMTnLr6j7MZ6Kp_yA68iSJTIQukSFj2takatdVMwUjoaiOKVeB9bOEfa7wJyIJM30jLmUKh2sxJ0CPfks5ABsDAH9lTD-lFDrkUiw9YQipH0JypBOhCLzCrjtxf3dzdVy1W00 "Edit Work Item")
 
-### Manage Components
+## Manage Components
 
 ![Manage Components](https://uml-services.xchangedocs.co.za/svg/TLBHQeCm57ttAoxTeyfWp-jePoiKDZPcHncb3p5U95GJIQ9Rj_NVbsHRgrKlYEScvvnxefafJQHMfD0mUIISv0YHA2l1aMiryJmmzUMxbwtf57giqsQBvzfhU6fGDWpVuHisGkvXfR5Kfdb19Mf9qUBRzExi1SUJnHc5OJWw8-cqRcbzrLkpvI_3XEMSw5gQkHjC8R7XA9eC2rHKL9WPk2Qv6jPRILGm4nDULuRvvkANJHNKB1YMtCSnF903IaCCpPCIkaUU1LQaHIP6LAme6CzR-LhQOScpn8f8X7_f_DES4kAQKyq4_tEmKudT64jx4q7CFjonB5yXhINJXnxxw7MxxY_nU_pjFCjsnd2xp9XsO845QdGmAeJ2dJVit_A-yBtK_MgEtiny8tkTVm00 "Manage Components")
 
 
-### New Component
+## New Component
 
 ![New Component](https://uml-services.xchangedocs.co.za/svg/SoWkIImgAKxCAL5GyaijLt3Epot8pqlDAr7Yub80WcfjC0K2jhOAA2hW4hgwkd1sDPo5oGC1lyJSL2k56WKbk34A8PabEQbA62f34jEBGGfpomfqIejJ5P8JYz5KrQBQfOrXH7HmObbgBD2GQEV4lEJKd5WSsY6iMYw7rBmKK5000000 "New Component")
 
 
-### Edit Component
+## Edit Component
 
 Tags can be added to Components to help filter them in or out of estimates. Note these tags override any work items that belong to that component. If a component is tagged as "not mvp" and the filter to exclude "not mvp" tag is applied to the estimate, then regardless of how the component's work items are tagged, they will be excluded from the calculation.
 
@@ -51,21 +51,21 @@ If a component is descoped, all of its work items are descoped.
 
 ![Edit Component](https://uml-services.xchangedocs.co.za/svg/fL9D2u904BtxAuOz5QN_G12gGvSkUXCFopgLiEukxYY4-T_JWiLQWw1tsVbuZpV3R6A9DsIv9627iYBOwTfeXOfO4C28VlDy9iGnl5DS9mn35_SkyhC9pCaXgqWYynXxjAAf35LQWTViqwDV_5JfCzGt4CxeYWr6oxBeh-hWpxUepFZ5mXrOtPbjQn44jmkBJyYBSPFG2csmXDL9qyYLefMSi5p_u3y_XS-ONTCPfhp3OXmktt4bK1PVvAze219KvVHV7W00 "Edit Component")
 
-### Edit Resource
+## Edit Resource
 
 ![Edit Resource](https://uml-services.xchangedocs.co.za/svg/SoWkIImgAKxCAL5GSat9B548IYtEBorAJbNYub80WcfjC0K2jhOAA2hW4hgwkd1sDPo5oSCk0W8m8wqKQXIKGl9p5PmIyxABbR2gTIujAahDIwu4gOqBIinBYSEkBB-u16oSaQc1dg41fbcr62B8_i1KWHGIC10Td5YM6Wkq9DevCIyvDISMXtO8gvRB8JKl1HJK0000 "Edit Resource")
 
-### Settings
+## Settings
 
 Defaults such as Estimate Ratios are applied when a work item is created.
 
 ![Settings](https://uml-services.xchangedocs.co.za/svg/bLHjQy8m4FxUNv4L1igep35XZ3bqrR71S4CT-o0AiJrT84qbIJkq-jztgRLis7RpeCtbyZptbd0TfQdKYd9Dx15epSHIsPP5K9ABT37IRfF3OMvp72VNarmxtXLRZ8ofN88cRYGb26zzIxParWivft9MYE_1WaQOg1kA1VEH0kG5Ok26QD-qR5pEYmEn0CYxO5gbCPx2I2eCHTSgsnJ7IsPzfLb0DP0XrInKf9QbK2_4fw50cJQbAJKRBRiKw8O-keMOmPV1NZQQvTWXAA3I-zm3Ivpk2gt_BSoDb0w3yhgIyLdfcP6x-Vs0OfUtHikQiD_yBXGDXseg_NN5CiA7G3vWxdYSWT18li8F6vN-MzNqjsTyiJ86IMgDGN-CxPPGHoBUIKg_pbnLUzb44iXZ93niaZYL_S3f9fIakrgToipl-rNmjI4RalbAMSMNlqDEKXbfqlNzQJMYxpFz1sG8GHZ3z8JiZYrcd5XMEUR7DChZZYX6nHedBiLXmASbzBssipeWV3FflW40 "Settings")
 
-### Add Custom Estimate Ratio
+## Add Custom Estimate Ratio
 
 ![Add Custom Estimate Ratio](https://uml-services.xchangedocs.co.za/svg/SoWkIImgAKxCAL5GSan9KN0kBIx9prLmBIx9p4qiILK8IYp9p5VYub80WcfjC0K2jhOAVgdbs5N35UdgwiBPrN0M28Ia0dNafLifr2We6UgPAg58EkUd04rABSi4MW2KDz0pH9KFIYrEJInApe18ecb6SYCCH0SdbgN60bL7EoVc9QVcnAAegEL2PTLoEQJcfO021000 "Add Custom Estimate Ratio")
 
-## References
+# References
 
 You can mock Pie Charts etc. too.
 

@@ -1,0 +1,23 @@
+@startuml "Component Use Cases"
+    left to right direction
+
+    actor  "User" as user
+
+    rectangle "System" {
+        usecase "Manage Components" as mg_components
+
+        rectangle "Component" {
+            usecase "New Component" as new
+            usecase "Edit Component" as edit
+            usecase "Update Component" as update
+            usecase "Get Component" as get
+
+            mg_components -- edit
+            mg_components -- new
+            mg_components -- update
+            mg_components -- get
+        }
+
+        user -- mg_components
+    }
+@enduml

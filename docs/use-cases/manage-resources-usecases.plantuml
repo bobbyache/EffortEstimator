@@ -1,0 +1,23 @@
+@startuml "Resource Use Cases"
+    left to right direction
+
+    actor  "User" as user
+
+    rectangle "System" {
+        usecase "Manage Resources" as mg_res
+
+        rectangle "Resource" {
+            usecase "New Resource" as new
+            usecase "Edit Resource" as edit
+            usecase "Update Resource" as update
+            usecase "Get Resource" as get
+
+            mg_res -- edit
+            mg_res -- new
+            mg_res -- update
+            mg_res -- get
+        }
+
+        user -- mg_res
+    }
+@enduml
