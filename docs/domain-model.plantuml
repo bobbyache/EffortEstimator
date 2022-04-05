@@ -2,24 +2,33 @@
     ' https://plantuml.com/salt
 
     class Component {}
-    class WorkItem {}
+    class WorkItem {
+        Title
+        Tags
+        ConfidencePercentage
+        EstimatedHours
+        Reset(CalculationTemplate)
+    }
+    class TimeEstimate {
+        Title
+        Value:TimeSpan
+    }
+    class RelativeTimeEstimate {
+        Ratio
+        BasedOnEstimate: TimeEstimate
+    }
     class Resource {}
     class Tag {}
-    class Estimate {}
     class CalculationTemplate {}
-    class ConfidenceLevel {}
-    class EstimateRatio {}
 
     Component -- Tag
-    WorkItem -- Estimate
     WorkItem -- Tag
-    Estimate -- EstimateRatio
-
-
+    TimeEstimate <|-- RelativeTimeEstimate
 
     WorkItem -- Component
-    WorkItem -- CalculationTemplate
     WorkItem -- Resource
-    WorkItem -- ConfidenceLevel
+    WorkItem -- TimeEstimate
+
+    CalculationTemplate -- RelativeTimeEstimate
 
 @enduml

@@ -1,0 +1,31 @@
+@startuml
+    actor "User" as user
+    entity "WorkItem" as witem
+    boundary "New WorkItem Screen" as screen
+    boundary "Validation Message" as message
+
+    user - screen : Open
+
+    control "create new" as create
+    control "input" as input
+
+    screen - create
+    create - witem
+    screen -- input
+
+    entity "Tags" as tags
+    entity "Title" as title
+    entity "CalculationTemplate" as templ
+    entity "DevelopmentHours" as hours
+
+    entity "Invalid Input Validation Message" as valid
+
+    input -- tags
+    input -- title
+    input -- templ: optionally
+    input -- hours
+
+    input - valid
+    message - valid
+    user --- message
+@enduml
