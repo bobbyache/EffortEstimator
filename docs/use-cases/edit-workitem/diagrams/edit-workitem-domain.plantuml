@@ -1,18 +1,22 @@
 @startuml
     ' https://plantuml.com/salt
 
-    class Component {}
     class WorkItem {
-        Title
-        Tags
-        ConfidencePercentage
-        EstimatedHours
+        + Title: string
+        + Description: string
+        + Tags: Tag[]
+        + Confidence: Percentage
+        + Estimate: Estimate
+        + Component: Component
+        + Resource: Resource
         Reset(EstimationTemplate)
     }
     note right of WorkItem
         This is a work item.
     end note
     
+    class Component {}
+
     class Estimate {
         + Title
         + Value:TimeSpan
@@ -72,8 +76,8 @@
     Component -- Tag
     WorkItem -- Tag
 
-    WorkItem -- Component
-    WorkItem -- Resource
-    WorkItem -- Estimate
+    WorkItem o-- Component
+    WorkItem o-- Resource
+    WorkItem o-- Estimate
 
 @enduml

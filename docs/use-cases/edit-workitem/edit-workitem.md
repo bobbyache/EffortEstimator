@@ -3,7 +3,7 @@
 ## To Be Actioned
 ---
 
-- [ ] Nothing yet...
+- [ ] Consider percentage as a value type. Confidence should be displayed as a percentage.
 
 ## Screen(s)
 ---
