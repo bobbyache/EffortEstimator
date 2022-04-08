@@ -23,8 +23,9 @@
                 }
                 ---
                 {^"Time"
-                    Calculation Template: | ^Basic ^Basic ^Test Intensive ^Research Intensive^  | [Re-calculate]
-                    {^"Calculated Fields"
+                    Estimation Template: | ^Basic ^Basic ^Test Intensive ^Research Intensive^  | [Re-calculate]
+                    
+                    {^"Estimation Fields"
                         Development | "10"
                         Research | "12.5"
                         Testing | "10"
@@ -41,5 +42,9 @@
                 [Save] | [Cancel]
             }
         }
+        ...
+        Notes:
+        Here is a note
+        ...
     }
 @endsalt

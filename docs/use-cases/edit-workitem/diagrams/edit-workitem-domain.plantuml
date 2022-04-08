@@ -1,0 +1,79 @@
+@startuml
+    ' https://plantuml.com/salt
+
+    class Component {}
+    class WorkItem {
+        Title
+        Tags
+        ConfidencePercentage
+        EstimatedHours
+        Reset(EstimationTemplate)
+    }
+    note right of WorkItem
+        This is a work item.
+    end note
+    
+    class Estimate {
+        + Title
+        + Value:TimeSpan
+        + EstimationFields
+        - estimationTemplate
+        Update(EstimationField, value)
+    }
+    note right of Estimate
+    Consider how to deal with fields that derive from other fields.
+    What will be the behavior if a derived field is updated.
+    Will it override the default value for this derived field?
+    end note
+
+    class Resource {}
+    class Tag {}
+    class EstimationTemplate {
+        - estimationFields
+    }
+    note right of EstimationTemplate
+    Every estimate is initially created via a template.
+    Afterwards, the values (even the derived ones)
+    can be edited.
+    end note
+
+    class EstimationFactory {
+        Create(EstimationTemplate): Estimate
+    }
+    
+    class EstimationField <<abstract>> <<value>> {
+        + Title <<readonly>>
+        + Value <<readonly>>
+    }
+    class AbsoluteEstimationField {
+        Constructor(title, value)
+    }
+
+    class DerivedEstimationField {
+        - fields <EstimationField, ratio>
+        Constructor()
+        Add(ratio, EstimationField)
+    }
+    note left of DerivedEstimationField
+        Add an estimation field/ratio pair
+        Will calculate a metric based on sum of
+        contained field ratios.        
+    end note
+
+    EstimationTemplate o-- EstimationField
+    Estimate o--EstimationTemplate : always created with a >
+    Estimate o-- EstimationField
+    EstimationField <|-- DerivedEstimationField
+    EstimationField <|-- AbsoluteEstimationField
+
+    ' Estimate -- EstimationFactory
+    ' EstimationFactory -- EstimationTemplate
+
+    Component -- Tag
+    WorkItem -- Tag
+
+    WorkItem -- Component
+    WorkItem -- Resource
+    WorkItem -- Estimate
+
+@enduml
